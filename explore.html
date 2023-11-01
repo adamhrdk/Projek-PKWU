@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek PKWU</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+    <div class="lds-ellipsis" id="loader"><div></div><div></div><div></div><div></div></div>
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="logo"><img src="pohon.png" alt="" srcset=""></div>
+                <div class="firstname">Indonesian</div>
+                <div class="lastname">Nature</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html" class="aktif">Home</a></li>
+                <li><a href="tentang.html" class="aktif">Tentang Kami</a></li>
+                <li><a href="dukung.html" class="aktif">Dukung Kami</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+                <img src="arfak.png">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="bangkirai.png">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="rinjani.png">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="bajo.png">
+            </div>
+            <label for="carousel-4" class="carousel-control next control-3">›</label>
+            <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-4" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-4">›</label>
+            <ol class="carousel-indicators">
+                <li>
+                    <label for="carousel-1" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-2" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-3" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-4" class="carousel-bullet">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <footer class="foot3">
+        <div class="fContainer">
+             <div class="wm">
+            <div class="wm-1">Dibuat oleh</div>
+            <div class="wm-2">&#169; Kelompok 7 - XII MIPA 5</div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = '0';
+            setTimeout(function() {
+                loader.style.display = 'none';
+                document.body.style.overflowx = 'hidden';
+            }, 500);
+        });
+    </script>
+</body>
+</html>

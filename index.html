@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projek PKWU</title>
+        <link rel="stylesheet" href="style1.css" />
+    </head>
+    <body>
+        <div class="lds-ellipsis" id="loader"><div></div><div></div><div></div><div></div></div>
+        <div class="fContainer">
+            <nav class="wrapper">
+                <div class="brand">
+                    <div class="logo"><img src="pohon.png" alt="" srcset=""></div>
+                    <div class="firstname">Indonesian</div>
+                    <div class="lastname">Nature</div>
+                </div>
+                <ul class="navigation">
+                    <li><a href="index.html" class="aktif">Home</a></li>
+                    <li><a href="tentang.html" class="aktif">Tentang Kami</a></li>
+                    <li><a href="dukung.html" class="aktif">Dukung Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header">
+            <h1 class="capt">Wonderful Indonesia</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GUKfhb1E6Sc?si=8S9Z0ze6rxAQa9hQ&autoplay=1&mute=1&loop=1" class="videoloop"></iframe>
+            <div class="desc">
+                <p>Jelajahi berbagai destinasi wisata alam di Indonesia melalui website kami.<br> Temukan pemandangan menakjubkan,pantai indah, gunung megah, dan masih banyak lagi!</p>
+                <a href="explore.html" class="btntitle1">Explore</a>
+            </div>
+        </div>
+        <footer class="foot">
+            <div class="fContainer">
+                 <div class="wm">
+                <div class="wm-1">Dibuat oleh</div>
+                <div class="wm-2">&#169; Kelompok 7 - XII MIPA 5</div>
+            </div>
+        </footer>
+        <script>
+            window.addEventListener('load', function() {
+                const loader = document.getElementById('loader');
+                loader.style.opacity = '0';
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                    document.body.style.overflowx = 'hidden';
+                }, 3000);
+            });
+        </script>
+    </body>
+</html>
